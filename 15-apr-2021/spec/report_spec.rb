@@ -6,6 +6,8 @@ describe Report do
       expect(subject.generate_report('Green')).to eq('Green: 1')
     end
 
-    
+    it 'takes a string with odd cased letters and returns the results' do
+      expect(subject.generate_report('grEEn')).to eq('Green: 1')
+    end
   end
 end
