@@ -11,7 +11,7 @@ describe Report do
     end
 
     it 'takes the csv with all possible correct student results' do
-      expect(subject.generate_report('Green, Red, Amber')).to eq('Green: 1\nAmber: 1\nRed: 2')
+      expect(subject.generate_report('Green, Red, Amber')).to eq("Green: 1\nAmber: 1\nRed: 1")
     end
   end
 end
