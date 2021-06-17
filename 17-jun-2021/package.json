@@ -1,0 +1,29 @@
+{
+  "name": "17-jun-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StuBehan/review-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StuBehan/review-practice/issues"
+  },
+  "homepage": "https://github.com/StuBehan/review-practice#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-plugin-jasmine": "^4.1.2",
+    "jasmine": "^3.7.0",
+    "jasmine-core": "^3.7.1",
+    "karma": "^6.3.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.3",
+    "karma-jasmine": "^4.0.1"
+  }
+}
