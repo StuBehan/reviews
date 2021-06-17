@@ -1,3 +1,3 @@
-const bandPassFilter = () => {
-  return []
+const bandPassFilter = (soundwave) => {
+  return soundwave
 }

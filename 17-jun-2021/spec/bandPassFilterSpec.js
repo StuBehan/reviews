@@ -1,5 +1,5 @@
 describe('bandPassFilter', () => {
-  it('returns an array', () => {
-    expect(bandPassFilter()).toBeInstanceOf(Array)
+  it('takes an array arguement and returns an array of frequencies', () => {
+    expect(bandPassFilter([500])).toEqual([500])
   })
 })
