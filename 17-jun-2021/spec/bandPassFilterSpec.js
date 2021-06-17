@@ -10,4 +10,8 @@ describe('bandPassFilter', () => {
   it('takes a freq outside of the default highpass, returns adjusted fq', () => {
     expect(bandPassFilter([1050])).toEqual([1000])
   })
+
+  it('passes user specified high and low pass ranges and returns adjusted fq', () => {
+    expect(bandPassFilter([30, 500, 900], 60, 800)).toEqual([60, 500, 800])
+  })
 })

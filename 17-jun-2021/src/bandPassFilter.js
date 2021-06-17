@@ -1,6 +1,6 @@
-const bandPassFilter = (soundwave) => {
-  let lowPass = 40
-  let highPass = 1000
+const bandPassFilter = (soundwave, lowpass = 40, highpass = 1000) => {
+  let lowPass = lowpass
+  let highPass = highpass
   let adjustedSoundwave = []
 
   soundwave.forEach(freq => {
