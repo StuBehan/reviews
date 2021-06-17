@@ -14,4 +14,8 @@ describe('bandPassFilter', () => {
   it('passes user specified high and low pass ranges and returns adjusted fq', () => {
     expect(bandPassFilter([30, 500, 900], 60, 800)).toEqual([60, 500, 800])
   })
+
+  it('throws an error if the soundwave arguement is not an array', () => {
+    expect(bandPassFilter('30')).toThrow('soundwaves are not parsed correctly')
+  })
 })
